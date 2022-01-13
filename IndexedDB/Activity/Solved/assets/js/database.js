@@ -11,7 +11,6 @@ const initdb = async () =>
         console.log('todos database already exists');
         return;
       }
-
       // Create a new object store for the data and give it an key name of 'id' which needs to increment automatically.
       db.createObjectStore('todos', { keyPath: 'id', autoIncrement: true });
       console.log('todos database created');
