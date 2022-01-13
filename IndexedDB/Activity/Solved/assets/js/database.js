@@ -1,7 +1,9 @@
 import { openDB } from 'idb';
 
 const initdb = async () =>
+
 // We are creating a new database named 'todos' which will be using version 1 of the database.
+
   openDB('todos', 1, {
     // Add our database schema if it has not already been initialized.
     upgrade(db) {
